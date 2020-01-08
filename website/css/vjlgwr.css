@@ -1,0 +1,83 @@
+/**
+ *demo compilation background
+ */
+$green: #999e61;
+$width-lines: 90px;
+$line-direction: 90deg;
+$g-linear: repeating-linear-gradient($line-direction, 
+    $green,
+    $green $width-lines / 3,
+    lighten($green, 10%) $width-lines / 3,
+    lighten($green, 10%) $width-lines
+);
+.bg-01 {
+  background: $g-linear;
+}
+
+$red: #D96255;
+$orange-dark: #E16A53;
+$orange-light: #EB7D52;
+$yellow: #EE9555;
+$lg-orange: linear-gradient(to left bottom, 
+  $red 0, 
+  $red 70%, 
+  $orange-dark 70%,
+  $orange-dark 80%,
+  $orange-light 80%,
+  $orange-light 90%,
+  $yellow 90%,
+  $yellow 100%
+);
+.bg-02 {
+  background: $lg-orange;
+}
+
+$blue: #5499C7;
+$blue-light: #1B2631;
+$shape: circle;
+$g-blue: radial-gradient(
+    $shape,
+    $blue 0%,
+    $blue-light 100%
+);
+.bg-03 {
+  background: $g-blue;
+}
+
+$orange: #ffee75;
+$yelllow: #ff8930;
+$g-orange: radial-gradient(ellipse farthest-corner at center top,
+    $orange,
+    $yelllow
+);
+.bg-04 {
+  background: $g-orange;
+}
+
+$g-pink: linear-gradient(51deg,
+    #e94e1b 13%,
+    #e41b9e 66%,
+    #de0054 100%
+);
+.bg-05 {
+  	background: $g-pink;
+}
+
+$g-rainbow: linear-gradient(-135deg,
+    #ffed89 0%,
+    #f4b677 20%,
+    #f296ab 40%,
+    #d962db 60%,
+    #858cdd 80%,
+    #14b4d1 100%
+);    
+.bg-06 {
+  	background: $g-rainbow;
+}
+
+/*
+ *Reset defaul settings
+ */
+.card__img {
+	height: 200px;
+}
